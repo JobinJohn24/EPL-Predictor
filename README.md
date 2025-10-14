@@ -25,4 +25,7 @@ To install the EPL predictor, follow these steps:
 2. Install the required python packages using script '*pip install -r requirements.txt*'
 3. Run '*predict.py*' script to generate predictions for upcoming EPL matches.
 
+## EPL Demonstration
+
+[](https://github.com/JobinJohn24/EPL-Predictor/blob/main/streamlitvideo.mp4)
 
