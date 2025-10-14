@@ -1,4 +1,4 @@
-# ⚽️💰 EPL Match Predictor & Betting Intelligence Platform  ⚽️💰
+# ⚽️ EPL Match Predictor & Betting Intelligence Platform ⚽️ 
 
 **Smart predictions meet smart betting.** 
 This tool analyzes English Premier League data to predict match outcomes, visualize team performance, and calculate expected value (EV) for betting opportunities—helping you make data-driven decisions.
