@@ -79,7 +79,7 @@ Disclaimer: There is a dropdown legend to help navigate and understand the terms
 
 Watch the EV calculator in action using sample data:
 
-https://github.com/user-attachments/assets/19a55afc-3c32-4d33-af5b-1e362e47dca2
+https://github.com/user-attachments/assets/f004c24f-0d9a-4735-a68e-6771d2f7ea04
 
 ## Installation
 
