@@ -79,7 +79,7 @@ Disclaimer: There is a dropdown legend to help navigate and understand the terms
 
 Watch the EV calculator in action using sample data:
 
-![demo](https://github.com/user-attachments/assets/e5f7eed4-e2fc-41ba-a82e-cb05150f2bdd)
+
 
 *Demo-The demo walks through uploading match data, interpreting EV calculations, and making betting decisions using a dummy dataset.*
 
