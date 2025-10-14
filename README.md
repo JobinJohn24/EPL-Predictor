@@ -46,7 +46,6 @@ Explore EPL data through dynamic visualizations:
 
 - **League Table & Standings** – Live rankings with goal difference and form indicators
 - **Team Performance Radar** – Multi-dimensional analysis (attack, defense, possession, discipline)
-- **Match Prediction Heatmap** – Win/draw/loss probabilities for upcoming fixtures
 - **Form Timeline** – Points earned over rolling windows to identify momentum
 - **Top Scorers & Assists** – Player leaderboards with trend analysis
 - **Head-to-Head Comparisons** – Side-by-side team statistics for any matchup
