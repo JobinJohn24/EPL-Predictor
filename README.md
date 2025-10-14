@@ -51,7 +51,7 @@ Explore EPL data through dynamic visualizations:
 - **Top Scorers & Assists** – Player leaderboards with trend analysis
 - **Head-to-Head Comparisons** – Side-by-side team statistics for any matchup
 
-https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/premier_league_dashboard.png
+![interactive dashboard](https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/premier_league_dashboard.png)
 
 
 ---
