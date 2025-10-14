@@ -1,31 +1,119 @@
-# English Premier League Predictor
-## Overview of the EPL predictor
+# ⚽️💰 EPL Match Predictor & Betting Intelligence Platform  ⚽️💰
 
-This is a python-based using a machine learning algorithm to predict upcoming EPL matches. This predictor uses a decision tree machine learning algorithm to predict the result to be a win, loss, or draw. This predictor includes factors that'll affect the outcome of each match such as past results, shooting, free kicks, pentalty kicks, and distance.
+**Smart predictions meet smart betting.** 
+This tool analyzes English Premier League data to predict match outcomes, visualize team performance, and calculate expected value (EV) for betting opportunities—helping you make data-driven decisions.
 
-## EPL Background Information
 
-The English Premier League, EPL, is the top professional soccer leagues in England. The EPL was founded on 1992, which replaced 'Football League First Divison,' to become the top professional league in England while the 'Football League Championship' (the Football League First Division was rebranded to Football League Championship) became the second-tier of professional soccer league in England. The EPL consists of 20 teams including the most common such as Manchester City, Manchester United, Liverpool, and Arsenal among others. The format of the EPL is based on the points from competing against every opponent in the league two times over the course of the season. The EPL league champion is based on the most amount of points at the end of the season, while the three teams with the least amount of points are relegated to the second-tier. You might be thinking about why the EPL decides to relegate the bottom three teams and the objective is to ensure competiveness throughout the league.
+## Overview
 
-## Data Sources
+This project combines machine learning, interactive analytics, and betting mathematics to transform EPL data into actionable insights. Whether you're a data enthusiast exploring football statistics or looking to make informed betting decisions, this platform delivers professional-grade analysis in an accessible format.
 
-- FBref
+**What it does:** Predicts match results, tracks team metrics across the season, and identifies positive EV betting opportunities by comparing predictions against bookmaker odds.
 
-## Data Fields
 
-The data fields associated with the data source helps improve the accuracy and precision of the English Premier League Predictor. The following is the data fields associted with the data source:
 
-- Shooting
+## Data Source
+
+Match data is scraped using from **FBref.com**, a comprehensive football statistics database that provides official Premier League data including:
+
+- Match results and fixtures
+- Team shooting statistics (shots, shots on target, expected goals)
+- Set piece conversion rates (free kicks, penalties)
+- Team form metrics (recent performance, win rates)
+- Defensive statistics (goals conceded, clean sheets)
+- Squad rotation and rest periods between matches
+
+The scraper uses rate-limiting to respect FBref's servers and caches data locally for efficient processing. The system generates synthetic training data that mirrors real EPL statistical distributions. Python was used for the backend, sckit-learn for machine learning, BeautifulSoup  & requests for web scraping, pandas for data preprocessing, Streamlit for the dashboard, & kelly criterion for bet sizing based on bankroll management.
+
+
+## Prediction Engine
+
+The match predictor uses advanced features to forecast outcomes:
+
+- **Team Form Metrics** – Recent win/loss streaks, goals scored/conceded over last 5-10 matches
+- **Head-to-Head History** – Historical performance between specific matchups
+- **Home/Away Splits** – Location-based performance differentials
+- **Expected Goals (xG)** – Shot quality and scoring efficiency indicators
+- **Defensive Strength** – Goals against, clean sheets, and defensive ratings
+- **Squad Value & Injuries** – Team strength adjusted for player availability
+- **Betting Market Movement** – Odds shifts indicating informed money
+
+The model is trained on 2024-2025 season of historical data using Decision Tree Classifier - GridSearchCV for hyperparameter for optimzation to achieve 90.8% accuracy on training data & 73.6% on the test data.
+
+[Top 15 Most Important Features for Match Prediction] https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/feature_importance.png
+Figure 1.1
+
+
+## Interactive Dashboard
+
+Explore EPL data through dynamic visualizations:
+
+- **League Table & Standings** – Live rankings with goal difference and form indicators
+- **Team Performance Radar** – Multi-dimensional analysis (attack, defense, possession, discipline)
+- **Match Prediction Heatmap** – Win/draw/loss probabilities for upcoming fixtures
+- **Form Timeline** – Points earned over rolling windows to identify momentum
+- **Top Scorers & Assists** – Player leaderboards with trend analysis
+- **Head-to-Head Comparisons** – Side-by-side team statistics for any matchup
+
+![Dashboard Preview]([path/to/dashboard-screenshot.png](https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/premier_league_dashboard.png))
+
+---
+
+## EV Betting Calculator
+
+The Expected Value calculator identifies profitable betting opportunities by comparing model predictions against bookmaker odds.
+
+**How it works:**
+1. Upload a CSV with matches, predictions (win/draw/loss probabilities), and bookmaker odds
+2. The calculator computes EV for each betting market using the Kelly Criterion
+3. Positive EV bets are highlighted with recommended stake sizes based on bankroll
+
+Disclaimer: There is a dropdown legend to help navigate and understand the terms. 
+
+**Key Features:**
+- Multi-market analysis (1X2, Over/Under, Both Teams to Score)
+- Bankroll management with Kelly Criterion stake suggestions
+- ROI tracking and bet history analysis
+- Risk-adjusted filtering to exclude high-variance opportunities
+
+### Video Demonstration
+
+Watch the EV calculator in action using sample data:
+
+**[📹 View Demo Video](https://github.com/JobinJohn24/EPL-Predictor/blob/main/streamlitvideo.mp4)**
+
+The demo walks through uploading match data, interpreting EV calculations, and making betting decisions using a dummy dataset.
+
+
 
 ## Installation
 
-To install the EPL predictor, follow these steps:
+### Setup Instructions
 
-1. Copy the repository to local machine.
-2. Install the required python packages using script '*pip install -r requirements.txt*'
-3. Run '*predict.py*' script to generate predictions for upcoming EPL matches.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/epl-predictor.git
+   cd epl-predictor
+   ```
 
-## EPL Demonstration
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-(https://github.com/JobinJohn24/EPL-Predictor/blob/main/streamlitvideo.mp4)
+3. **Run the dashboard**
+   ```bash
+   streamlit run dashboard.py
+   ```
+   The dashboard will open automatically in your browser at `localhost:8501`
+
+4. **Use the EV calculator**
+   ```bash
+   python ev_calculator.py --input data/sample_matches.csv
+   ```
+   Or access it through the dashboard's "Betting Calculator" tab
+
+### Sample Data
+
+A dummy CSV file is included in `/data/sample_matches.csv` for testing the EV calculator without real betting data.
 
