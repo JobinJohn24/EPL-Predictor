@@ -27,5 +27,5 @@ To install the EPL predictor, follow these steps:
 
 ## EPL Demonstration
 
-[](https://github.com/JobinJohn24/EPL-Predictor/blob/main/streamlitvideo.mp4)
+(https://github.com/JobinJohn24/EPL-Predictor/blob/main/streamlitvideo.mp4)
 
