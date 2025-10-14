@@ -36,8 +36,11 @@ The match predictor uses advanced features to forecast outcomes:
 
 The model is trained on 2024-2025 season of historical data using Decision Tree Classifier - GridSearchCV for hyperparameter for optimzation to achieve 90.8% accuracy on training data & 73.6% on the test data.
 
-[Top 15 Most Important Features for Match Prediction] https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/feature_importance.png
-Figure 1.1
+![Top 15 Most Important Features for Match Prediction](https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/feature_importance.png)
+Figure 1.1 - Represets the most important features for match prediction.
+
+![Confusion Matrix](https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/confusion_matrix.png)
+Figure 1.2 - Represents the confusion matrix, indicators the performance of the classification model. Broken down to true positives, true negatives, false postives, and false negatives.
 
 
 ## Interactive Dashboard
