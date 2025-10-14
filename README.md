@@ -79,11 +79,7 @@ Disclaimer: There is a dropdown legend to help navigate and understand the terms
 
 Watch the EV calculator in action using sample data:
 
-**[📹 View Demo Video](https://github.com/JobinJohn24/EPL-Predictor/blob/main/streamlitvideo.mp4)**
-
-The demo walks through uploading match data, interpreting EV calculations, and making betting decisions using a dummy dataset.
-
-
+https://github.com/user-attachments/assets/19a55afc-3c32-4d33-af5b-1e362e47dca2
 
 ## Installation
 
@@ -115,4 +111,9 @@ The demo walks through uploading match data, interpreting EV calculations, and m
 ### Sample Data
 
 A dummy CSV file is included in `/data/sample_matches.csv` for testing the EV calculator without real betting data.
+
+## Workflow
+
+![workflow diagram](https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/workflow.png)
+*Workflow Diagram represents the steps in creating or recreating this repository*
 
