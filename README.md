@@ -1,9 +1,5 @@
 # ⚽️ EPL Match Predictor & Betting Intelligence Platform ⚽️ 
 
-**Smart predictions meet smart betting.** 
-This tool analyzes English Premier League data to predict match outcomes, visualize team performance, and calculate expected value (EV) for betting opportunities—helping you make data-driven decisions.
-
-
 ## Overview
 
 This project combines machine learning, interactive analytics, and betting mathematics to transform EPL data into actionable insights. Whether you're a data enthusiast exploring football statistics or looking to make informed betting decisions, this platform delivers professional-grade analysis in an accessible format.
@@ -55,7 +51,8 @@ Explore EPL data through dynamic visualizations:
 - **Top Scorers & Assists** – Player leaderboards with trend analysis
 - **Head-to-Head Comparisons** – Side-by-side team statistics for any matchup
 
-![Dashboard Preview]([path/to/dashboard-screenshot.png](https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/premier_league_dashboard.png))
+https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/premier_league_dashboard.png
+
 
 ---
 
