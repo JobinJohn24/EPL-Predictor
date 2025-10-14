@@ -81,10 +81,6 @@ Watch the EV calculator in action using sample data:
 
 https://github.com/user-attachments/assets/19a55afc-3c32-4d33-af5b-1e362e47dca2
 
-*Demo-The demo walks through uploading match data, interpreting EV calculations, and making betting decisions using a dummy dataset.*
-
-
-
 ## Installation
 
 ### Setup Instructions
