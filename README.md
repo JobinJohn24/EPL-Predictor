@@ -112,8 +112,4 @@ https://github.com/user-attachments/assets/f004c24f-0d9a-4735-a68e-6771d2f7ea04
 
 A dummy CSV file is included in `/data/sample_matches.csv` for testing the EV calculator without real betting data.
 
-## Workflow
-
-![workflow diagram](https://github.com/JobinJohn24/EPL-Predictor/blob/main/images/workflow.png)
-*Workflow Diagram represents the steps in creating or recreating this repository*
 
